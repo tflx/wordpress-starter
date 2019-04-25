@@ -1,0 +1,45 @@
+{% block html_head_container %}
+
+{% include 'html-header.twig' %}
+{% block head %}
+{% endblock %}
+{% endblock %}
+
+<body class="{{body_class}}" data-template="base.twig">
+
+	<header class="header">
+		{% block header %}
+		<nav id="nav-main" role="navigation">
+			{% include "menu.twig" with {'menu': menu.get_items} %}
+		</nav><!-- #nav -->
+		{% endblock %}
+	</header>
+
+
+
+
+	<div class="count"></div>
+
+	<main>
+		<section id="content" role="main">
+			{% if title %}<h1>{{title}}</h1>{% endif %}
+			<div class="wrapper">
+				{% block content %}
+				Sorry, no content
+				{% endblock %}
+			</div>
+			{% if sidebar %}
+			<aside>
+				{{sidebar}}
+			</aside>
+			{% endif %}
+		</section>
+	</main>
+
+
+	{% block footer %}
+	{% include 'footer.twig' %}
+	{% endblock %}
+</body>
+
+</html>

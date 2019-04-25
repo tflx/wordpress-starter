@@ -1,0 +1,8 @@
+@import 'sanitize.css';
+
+@import "../modules/header/header";
+@import "../components/Button/button";
+
+body {
+  width: 100%;
+}

@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "outDir": "./dist/",
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "noImplicitAny": true,
+    // "module": "ES6",
+    "module": "esnext",
+    "target": "es5",
+    "jsx": "react",
+    "allowJs": true,
+    "lib": ["es2017", "dom", "es2015.promise"]
+  }
+}
