@@ -1,7 +1,4 @@
-import PubSub from '../lib/pubsub.js';
-
 export default class Store {
-    public events: PubSub;
     private actions: any;
     private mutations: any;
     public state: any;
